@@ -11,3 +11,12 @@ let student = {
 console.log(student.name, student.age);
 
 console.log(student.displayInfo());
+
+
+let studentJSON = JSON.stringify(student);
+console.log(studentJSON);
+
+let newStudent = JSON.parse(studentJSON);
+console.log(newStudent);
+
+console.log(newStudent === studentJSON);

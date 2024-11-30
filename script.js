@@ -50,5 +50,9 @@ let combinedCourses = [...student.courses, ...newCourses];
 console.log(combinedCourses);
 
 // Bonus Task reduce method to calculate average score from array scores
-
-
+// adds all scores in array and sets to totalScore
+let totalScore = scores.reduce((accumulator, currentScore) => accumulator + currentScore, 0);
+// averages the scores
+let averageScore = totalScore / scores.length;
+// outputs the average score from array scores
+console.log(averageScore);

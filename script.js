@@ -49,4 +49,6 @@ let newCourses = ["Algorithms", "Database Concepts"];
 let combinedCourses = [...student.courses, ...newCourses];
 console.log(combinedCourses);
 
-// Part 5 Add method to student object to add new course to courses array
+// Bonus Task reduce method to calculate average score from array scores
+
+

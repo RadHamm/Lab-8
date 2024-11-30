@@ -7,7 +7,12 @@ let student = {
     // Method to display basic info
     displayInfo: function() {
         return `Name: ${this.name}, Age: ${this.age}`;
-    }
+    },
+    // Part 5: Adding new methods to student object
+    addCourse: function(courseName) {
+        this.courses.push(courseName);
+    },
+
 };
 
 console.log(student.name, student.age);
@@ -36,7 +41,9 @@ console.log(score2);
 // Part 4 clone object student and add a new property
 let clonedStudent = { ...student, graduationYear: 2026 };
 console.log(clonedStudent);
-
+// 4.3 merge arrays
 let newCourses = ["Algorithms", "Database Concepts"];
 let combinedCourses = [...student.courses, ...newCourses];
 console.log(combinedCourses);
+
+// Part 5 Add method to student object to add new course to courses array

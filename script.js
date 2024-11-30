@@ -12,7 +12,10 @@ let student = {
     addCourse: function(courseName) {
         this.courses.push(courseName);
     },
-
+    // Part 5.2: Add method to calculate and return total courses
+    numberOfTotalCourses: function() {
+        return this.courses.length;
+    }
 };
 
 console.log(student.name, student.age);
